@@ -14,6 +14,7 @@ public class CitationMachineTester {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        CitationGUI g = new CitationGUI();
+        g.setVisible(true);
     }
 }
