@@ -5,15 +5,20 @@
 package citationmachinetester;
 
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
+import java.util.HashMap;
 
 /**
  *
  * @author schon2649
  */
 public class CitationGUI extends javax.swing.JFrame {
+    
+    ArrayList <HashMap> citationInfo = new ArrayList<>();
+    ArrayList <String> citationString = new ArrayList<>();
 
     /**
      * Creates new form CitationGUI
@@ -472,24 +477,22 @@ public class CitationGUI extends javax.swing.JFrame {
                                                 .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addGap(41, 41, 41)
-                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addGroup(jPanel4Layout.createSequentialGroup()
-                                                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(jPanel4Layout.createSequentialGroup()
-                                                        .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jComboBox8, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jTextField22)
-                                                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                                .addGap(97, 97, 97)
-                                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jComboBox8, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jTextField22)
+                                            .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addGap(101, 101, 101)
+                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(jLabel22)))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(177, 177, 177)
@@ -641,9 +644,40 @@ public class CitationGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        HashMap c = new HashMap();
+        String authorFirst = jTextField19.getText();
+        c.put("authorFirst", authorFirst);
+        String authorLast = jTextField20.getText();
+        c.put("authorLast", authorLast);
+        String title = jTextField32.getText();
+        c.put("title", title);
+        String pubDay = jTextField21.getText();
+        c.put("pubDay", pubDay);
+        String pubMonth = String.valueOf(jComboBox7.getSelectedItem());
+        c.put("pubMonth", pubMonth);
+        String pubYear = jTextField22.getText();
+        c.put("pubYear", pubYear);
+        String accDay = jTextField23.getText();
+        c.put("accDay", accDay);
+        String accMonth = String.valueOf(jComboBox7.getSelectedItem());
+        c.put("accMonth", accMonth);
+        String accYear = jTextField24.getText();
+        c.put("accYear", accYear);
+        String citationType = ("Website");
+        c.put("citationType", citationType);
         
+        citationInfo.add(c);
+        createCitation(c);
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+    public void createCitation(HashMap x){
+        
+        Website newWeb = new Website(x);
+        System.out.println(newWeb.cite());
+        
+        
+    }
+    
     /**
      * @param args the command line arguments
      */

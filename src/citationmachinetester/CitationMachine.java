@@ -10,16 +10,16 @@ public class CitationMachine {
     String citation, citationType;
     
     public CitationMachine ( HashMap c ) {
-        this.citationType = (String)c.get(citationType);
-        this.title = (String)c.get(title);
-        this.authorFirst = (String)c.get(authorFirst); 
-        this.authorLast = (String)c.get(authorLast); ;
-        this.accessDay = (String)c.get(accessDay); 
-        this.accessMonth = (String)c.get(accessMonth); 
-        this.accessYear = (String)c.get(accessYear); 
-        this.publishDay = (String)c.get(publishDay); 
-        this.publishMonth = (String)c.get(publishMonth); 
-        this.publishYear = (String)c.get(publishYear); 
+        this.citationType = (String)c.get("citationType");
+        this.title = (String)c.get("title");
+        this.authorFirst = (String)c.get("authorFirst"); 
+        this.authorLast = (String)c.get("authorLast"); ;
+        this.accessDay = (String)c.get("accDay"); 
+        this.accessMonth = (String)c.get("accMonth"); 
+        this.accessYear = (String)c.get("accYear"); 
+        this.publishDay = (String)c.get("pubDay"); 
+        this.publishMonth = (String)c.get("pubMonth"); 
+        this.publishYear = (String)c.get("pubYear"); 
     }
  
     public void createCitation() {
