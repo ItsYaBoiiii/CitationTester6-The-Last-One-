@@ -10,10 +10,10 @@ public class Website extends CitationMachine{
     
     public Website( HashMap c ) {
         super( c );
-        //this.websiteTitle = (String)c.get(websiteTitle);
-        //this.url = (String)c.get(url);
-        //this.displayURL = (String)c.get(displayURL);
-        //this.publisher = (String)c.get(publisher);
+        this.websiteTitle = (String)c.get("websiteTitle");
+        this.url = (String)c.get("url");
+        this.displayURL = (String)c.get("displayURL");
+        this.publisher = (String)c.get("publisher");
     }
    
 
