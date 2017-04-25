@@ -1,27 +1,42 @@
 package citationmachinetester;
 
-/**
- *
- * @author zhuj2423
- */
-public class Book extends CitationMachine {
-    String publisherTitle;
-    String publisherCity;
-    String publisherYear;
+import java.util.HashMap;
+
+public class Book extends CitationMachine{
+    String cityOfPublication, publisher;
     
-    public Book( String t, String aF, String aL, 
-            String pD, String pM, String pY, 
-            String aD, String aM, String aY,
-            String pbT, String pbC, String pbY){
-        super(t, aF, aL, pD, pM, pY, aD, aM, aY);
-        this.publisherTitle = pbT;
-        this.publisherCity = pbC;
-        this.publisherYear = pbY;
+    public Book( HashMap c ){
+        super(c);
         
+        title = (String)c.get("title");
+        if ( title == null || title.equals("Title") )
+            title = "";
+        else
+            title += ". ";
+        
+        cityOfPublication = (String)c.get("cityOfPublication");
+        if ( cityOfPublication == null || cityOfPublication.equals("CityOfPublication") )
+            cityOfPublication = "";
+        else
+            cityOfPublication += ". ";
+        
+        publisher = (String)c.get(publisher);
+        if ( publisher == null || publisher.equals("Publisher") )
+            publisher = "";
+        else
+            publisher += ". ";
+        
+
+        
+
+            
     }
     
-    
-    public String getSimilarBooks() {
-        return null;
+    public String cite(){
+        citation = authorLast + authorFirst + title + cityOfPublication 
+                + publisher + publishYear + "Print.";
+        
+        return citation;
     }
+    
 }
