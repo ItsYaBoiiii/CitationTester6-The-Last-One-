@@ -65,6 +65,9 @@
   <SubComponents>
     <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f1" green="f1" red="fe" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
@@ -76,6 +79,11 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="99" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Book">
@@ -101,14 +109,14 @@
                               <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jTextField1" min="-2" pref="159" max="-2" attributes="0"/>
+                                      <Component id="BookAuthorFirst" min="-2" pref="159" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextField2" min="-2" pref="159" max="-2" attributes="0"/>
+                                      <Component id="BookAuthorLast" min="-2" pref="159" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField3" min="-2" pref="91" max="-2" attributes="0"/>
-                                  <Component id="jTextField31" max="32767" attributes="0"/>
-                                  <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="BookYear" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <Component id="BookTitle" max="32767" attributes="0"/>
+                                  <Component id="BookCityofPublication" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="BookPublisher" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -120,7 +128,7 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButton4" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="BookCitation" min="-2" pref="168" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -132,32 +140,32 @@
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField1" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="BookAuthorFirst" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="BookAuthorLast" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                           <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField31" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="BookTitle" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField3" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="BookYear" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField4" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="BookCityofPublication" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField5" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="BookPublisher" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                      <Component id="jButton4" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="BookCitation" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace pref="168" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -172,12 +180,12 @@
                 <Property name="text" type="java.lang.String" value="Generate MLA Citation for a Book"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="BookAuthorFirst">
               <Properties>
                 <Property name="text" type="java.lang.String" value="FirstName"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="BookAuthorLast">
               <Properties>
                 <Property name="text" type="java.lang.String" value="LastName"/>
               </Properties>
@@ -198,7 +206,7 @@
                 <Property name="text" type="java.lang.String" value="Year Published:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField3">
+            <Component class="javax.swing.JTextField" name="BookYear">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Year"/>
               </Properties>
@@ -211,17 +219,17 @@
                 <Property name="text" type="java.lang.String" value="Title of Book:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField31">
+            <Component class="javax.swing.JTextField" name="BookTitle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Title"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton4">
+            <Component class="javax.swing.JButton" name="BookCitation">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Create Citation"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BookCitationActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel20">
@@ -240,12 +248,12 @@
                 <Property name="text" type="java.lang.String" value="Publisher:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField4">
+            <Component class="javax.swing.JTextField" name="BookCityofPublication">
               <Properties>
                 <Property name="text" type="java.lang.String" value="CityOfPublication"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField5">
+            <Component class="javax.swing.JTextField" name="BookPublisher">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Publisher"/>
               </Properties>
@@ -253,6 +261,11 @@
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="66" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Magazine">
@@ -279,29 +292,29 @@
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTextField6" min="-2" pref="324" max="-2" attributes="0"/>
+                                          <Component id="MagazineArticleTitle" min="-2" pref="324" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="jTextField7" min="-2" pref="159" max="-2" attributes="0"/>
+                                              <Component id="MagazineAuthorFirst" min="-2" pref="159" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jTextField8" min="-2" pref="159" max="-2" attributes="0"/>
+                                              <Component id="MagazineAuthorLast" min="-2" pref="159" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTextField11" min="-2" pref="325" max="-2" attributes="0"/>
+                                          <Component id="MagazineTitle" min="-2" pref="325" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="jTextField10" min="-2" pref="99" max="-2" attributes="0"/>
+                                              <Component id="MagazineDayPublished" min="-2" pref="99" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jComboBox4" min="-2" pref="91" max="-2" attributes="0"/>
+                                              <Component id="MagazineMonthPublished" min="-2" pref="91" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                              <Component id="jTextField9" min="-2" pref="99" max="-2" attributes="0"/>
+                                              <Component id="MagazineYearPublished" min="-2" pref="99" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField12" min="-2" pref="108" max="-2" attributes="0"/>
+                                              <Component id="MagazinePageStart" min="-2" pref="108" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jTextField29" min="-2" pref="108" max="-2" attributes="0"/>
+                                              <Component id="MagazinePageEnd" min="-2" pref="108" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -316,7 +329,7 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButton3" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="MagazineCitation" min="-2" pref="168" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -328,35 +341,35 @@
                       <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField7" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="jTextField8" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="MagazineAuthorFirst" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="MagazineAuthorLast" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField6" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="MagazineArticleTitle" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox4" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField9" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField10" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="MagazineMonthPublished" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="MagazineYearPublished" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="MagazineDayPublished" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField11" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="MagazineTitle" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField12" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField29" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="MagazinePageStart" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="MagazinePageEnd" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="MagazineCitation" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -371,29 +384,29 @@
                 <Property name="text" type="java.lang.String" value="Author Name:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField7">
+            <Component class="javax.swing.JTextField" name="MagazineAuthorFirst">
               <Properties>
                 <Property name="text" type="java.lang.String" value="FirstName"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField8">
+            <Component class="javax.swing.JTextField" name="MagazineAuthorLast">
               <Properties>
                 <Property name="text" type="java.lang.String" value="LastName"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField9">
+            <Component class="javax.swing.JTextField" name="MagazineYearPublished">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Year"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox4">
+            <Component class="javax.swing.JComboBox" name="MagazineMonthPublished">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Month&quot;, &quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;, &quot;December&quot;})" type="code"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField10">
+            <Component class="javax.swing.JTextField" name="MagazineDayPublished">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Day"/>
               </Properties>
@@ -414,12 +427,12 @@
                 <Property name="text" type="java.lang.String" value="Generate MLA Citation for a Magazine"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton3">
+            <Component class="javax.swing.JButton" name="MagazineCitation">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Create Citation"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MagazineCitationActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
@@ -430,7 +443,7 @@
                 <Property name="text" type="java.lang.String" value="Title of Article:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField6">
+            <Component class="javax.swing.JTextField" name="MagazineArticleTitle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Title"/>
               </Properties>
@@ -451,211 +464,29 @@
                 <Property name="text" type="java.lang.String" value="Page Start/End:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField11">
+            <Component class="javax.swing.JTextField" name="MagazineTitle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="MagazineTitle"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField12">
+            <Component class="javax.swing.JTextField" name="MagazinePageStart">
               <Properties>
                 <Property name="text" type="java.lang.String" value="PageStart"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField29">
+            <Component class="javax.swing.JTextField" name="MagazinePageEnd">
               <Properties>
                 <Property name="text" type="java.lang.String" value="PageEnd"/>
               </Properties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel3">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Newspaper">
-                <Property name="tabTitle" type="java.lang.String" value="Newspaper"/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                      <Component id="jTextField13" min="-2" pref="159" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextField14" min="-2" pref="159" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField17" min="-2" pref="91" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jComboBox6" max="32767" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField15" min="-2" pref="91" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jComboBox5" min="-2" pref="91" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jTextField16" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField18" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
-                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace pref="86" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="168" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField13" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="jTextField14" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox5" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField16" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField15" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField17" alignment="1" min="-2" pref="33" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jComboBox6" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                              <Component id="jTextField18" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace pref="311" max="32767" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="56" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel9">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="24" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Generate MLA Citation for a Newspaper"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel10">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Author Name:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField13">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="FirstName"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField14">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="LastName"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel11">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Date Published:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField15">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Day"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox5">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Month&quot;, &quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;, &quot;December&quot;})" type="code"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField16">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Year"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel12">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Date Accessed:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField17">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Day"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox6">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Month&quot;, &quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;, &quot;December&quot; })" type="code"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField18">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Year"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="jButton2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Create Citation"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
-              </Events>
-            </Component>
-          </SubComponents>
-        </Container>
         <Container class="javax.swing.JPanel" name="jPanel4">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="0" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Website">
@@ -686,20 +517,20 @@
                                       <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField36" min="-2" pref="187" max="-2" attributes="0"/>
+                                              <Component id="WebsitePublisher" min="-2" pref="187" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jCheckBox1" min="-2" pref="128" max="-2" attributes="0"/>
+                                              <Component id="WebsiteDisplayURL" min="-2" pref="128" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="jTextField32" min="-2" pref="324" max="-2" attributes="0"/>
+                                                          <Component id="WebsiteArticleTitle" min="-2" pref="324" max="-2" attributes="0"/>
                                                           <Group type="102" attributes="0">
-                                                              <Component id="jTextField19" min="-2" pref="159" max="-2" attributes="0"/>
+                                                              <Component id="WebsiteAuthorFirst" min="-2" pref="159" max="-2" attributes="0"/>
                                                               <EmptySpace max="-2" attributes="0"/>
-                                                              <Component id="jTextField20" min="-2" pref="159" max="-2" attributes="0"/>
+                                                              <Component id="WebsiteAuthorLast" min="-2" pref="159" max="-2" attributes="0"/>
                                                           </Group>
                                                       </Group>
                                                   </Group>
@@ -707,24 +538,24 @@
                                                       <Group type="102" attributes="0">
                                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                               <Group type="102" alignment="0" attributes="0">
-                                                                  <Component id="jTextField21" min="-2" pref="91" max="-2" attributes="0"/>
+                                                                  <Component id="WebsiteDayPublished" min="-2" pref="91" max="-2" attributes="0"/>
                                                                   <EmptySpace max="-2" attributes="0"/>
-                                                                  <Component id="jComboBox7" min="-2" pref="91" max="-2" attributes="0"/>
+                                                                  <Component id="WebsiteMonthPublished" min="-2" pref="91" max="-2" attributes="0"/>
                                                               </Group>
                                                               <Group type="102" alignment="0" attributes="0">
-                                                                  <Component id="jTextField23" min="-2" pref="91" max="-2" attributes="0"/>
+                                                                  <Component id="WebsiteDayAccessed" min="-2" pref="91" max="-2" attributes="0"/>
                                                                   <EmptySpace max="-2" attributes="0"/>
-                                                                  <Component id="jComboBox8" max="32767" attributes="0"/>
+                                                                  <Component id="WebsiteMonthAccessed" max="32767" attributes="0"/>
                                                               </Group>
                                                           </Group>
                                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField22" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField24" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                                              <Component id="WebsiteYearPublished" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="WebsiteYearAccessed" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                                           </Group>
                                                       </Group>
-                                                      <Component id="jTextField33" alignment="0" pref="325" max="32767" attributes="0"/>
-                                                      <Component id="jTextField35" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="WebsiteTitle" alignment="0" pref="325" max="32767" attributes="0"/>
+                                                      <Component id="WebsiteURL" alignment="0" max="32767" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <EmptySpace min="0" pref="120" max="32767" attributes="0"/>
@@ -741,7 +572,7 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="WebsiteCitation" min="-2" pref="168" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -753,51 +584,51 @@
                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField19" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="jTextField20" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="WebsiteAuthorFirst" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="WebsiteAuthorLast" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                           <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField32" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="WebsiteArticleTitle" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox7" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField22" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField21" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WebsiteMonthPublished" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WebsiteYearPublished" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WebsiteDayPublished" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jTextField23" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="WebsiteDayAccessed" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                               <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jComboBox8" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                              <Component id="jTextField24" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="WebsiteMonthAccessed" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="WebsiteYearAccessed" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel23" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField33" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WebsiteTitle" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField35" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WebsiteURL" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField36" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WebsitePublisher" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                           <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jCheckBox1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WebsiteDisplayURL" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="WebsiteCitation" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -820,12 +651,12 @@
                 <Property name="text" type="java.lang.String" value="Author Name:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField19">
+            <Component class="javax.swing.JTextField" name="WebsiteAuthorFirst">
               <Properties>
                 <Property name="text" type="java.lang.String" value="FirstName"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField20">
+            <Component class="javax.swing.JTextField" name="WebsiteAuthorLast">
               <Properties>
                 <Property name="text" type="java.lang.String" value="LastName"/>
               </Properties>
@@ -838,19 +669,19 @@
                 <Property name="text" type="java.lang.String" value="Date Published:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField21">
+            <Component class="javax.swing.JTextField" name="WebsiteDayPublished">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Day"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox7">
+            <Component class="javax.swing.JComboBox" name="WebsiteMonthPublished">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Month&quot;, &quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;, &quot;December&quot;})" type="code"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField22">
+            <Component class="javax.swing.JTextField" name="WebsiteYearPublished">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Year"/>
               </Properties>
@@ -863,19 +694,19 @@
                 <Property name="text" type="java.lang.String" value="Date Accessed:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField23">
+            <Component class="javax.swing.JTextField" name="WebsiteDayAccessed">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Day"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox8">
+            <Component class="javax.swing.JComboBox" name="WebsiteMonthAccessed">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Month&quot;, &quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;, &quot;December&quot; })" type="code"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField24">
+            <Component class="javax.swing.JTextField" name="WebsiteYearAccessed">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Year"/>
               </Properties>
@@ -888,17 +719,17 @@
                 <Property name="text" type="java.lang.String" value="Title of Article:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField32">
+            <Component class="javax.swing.JTextField" name="WebsiteArticleTitle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Title"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="WebsiteCitation">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Create Citation"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="WebsiteCitationActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel23">
@@ -909,13 +740,10 @@
                 <Property name="text" type="java.lang.String" value="Title of Website:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField33">
+            <Component class="javax.swing.JTextField" name="WebsiteTitle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Title"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField33ActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel24">
               <Properties>
@@ -925,18 +753,15 @@
                 <Property name="text" type="java.lang.String" value="URL:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField35">
+            <Component class="javax.swing.JTextField" name="WebsiteURL">
               <Properties>
                 <Property name="text" type="java.lang.String" value="URL"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField36">
+            <Component class="javax.swing.JTextField" name="WebsitePublisher">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Publisher"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField36ActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel25">
               <Properties>
@@ -946,20 +771,22 @@
                 <Property name="text" type="java.lang.String" value="Publisher:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+            <Component class="javax.swing.JCheckBox" name="WebsiteDisplayURL">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Display URL?"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
-              </Events>
             </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel5">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="0" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Film">
@@ -985,17 +812,17 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                      <Component id="jTextField25" min="-2" pref="159" max="-2" attributes="0"/>
+                                      <Component id="FilmDirectorFirst" min="-2" pref="159" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextField26" min="-2" pref="159" max="-2" attributes="0"/>
+                                      <Component id="FilmDirectorLast" min="-2" pref="159" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jTextField37" max="32767" attributes="0"/>
-                                          <Component id="jTextField28" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                          <Component id="jTextField38" alignment="0" pref="325" max="32767" attributes="0"/>
-                                          <Component id="jTextField27" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="FilmTitle" max="32767" attributes="0"/>
+                                          <Component id="FilmYearReleased" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                          <Component id="FilmMainPerformers" alignment="0" pref="325" max="32767" attributes="0"/>
+                                          <Component id="FilmStudio" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1009,7 +836,7 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="254" max="32767" attributes="0"/>
-                      <Component id="jButton5" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="FilmCitation" min="-2" pref="168" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -1021,32 +848,32 @@
                       <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField25" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="jTextField26" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="FilmDirectorFirst" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="FilmDirectorLast" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                           <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField37" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="FilmTitle" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField28" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="FilmYearReleased" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField38" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="FilmMainPerformers" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField27" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="FilmStudio" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                      <Component id="jButton5" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="FilmCitation" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace pref="173" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -1069,12 +896,12 @@
                 <Property name="text" type="java.lang.String" value="Director Name:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField25">
+            <Component class="javax.swing.JTextField" name="FilmDirectorFirst">
               <Properties>
                 <Property name="text" type="java.lang.String" value="FirstName"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField26">
+            <Component class="javax.swing.JTextField" name="FilmDirectorLast">
               <Properties>
                 <Property name="text" type="java.lang.String" value="LastName"/>
               </Properties>
@@ -1087,7 +914,7 @@
                 <Property name="text" type="java.lang.String" value="Year Released:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField28">
+            <Component class="javax.swing.JTextField" name="FilmYearReleased">
               <Properties>
                 <Property name="text" type="java.lang.String" value="YearReleased"/>
               </Properties>
@@ -1100,7 +927,7 @@
                 <Property name="text" type="java.lang.String" value="Film Title:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField37">
+            <Component class="javax.swing.JTextField" name="FilmTitle">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Title"/>
               </Properties>
@@ -1113,7 +940,7 @@
                 <Property name="text" type="java.lang.String" value="Main Performers:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField38">
+            <Component class="javax.swing.JTextField" name="FilmMainPerformers">
               <Properties>
                 <Property name="text" type="java.lang.String" value="MainPerformers"/>
               </Properties>
@@ -1126,15 +953,15 @@
                 <Property name="text" type="java.lang.String" value="Studio:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton5">
+            <Component class="javax.swing.JButton" name="FilmCitation">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Create Citation"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FilmCitationActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField27">
+            <Component class="javax.swing.JTextField" name="FilmStudio">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Studio"/>
               </Properties>
@@ -1142,6 +969,11 @@
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel6">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="0" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Bibliography">
@@ -1153,10 +985,20 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="240" max="-2" attributes="0"/>
                       <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="232" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="118" max="32767" attributes="0"/>
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSlider1" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1165,7 +1007,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                       <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="619" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="jSlider1" min="-2" pref="358" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="186" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1177,6 +1023,25 @@
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Citation Bibliography"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSlider" name="jSlider1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="99" red="0" type="rgb"/>
+                </Property>
+                <Property name="value" type="int" value="0"/>
+              </Properties>
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSlider1StateChanged"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel10">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Slide Right to Output Bibliography ---------&gt;"/>
               </Properties>
             </Component>
           </SubComponents>

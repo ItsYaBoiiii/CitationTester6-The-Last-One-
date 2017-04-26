@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Film extends CitationMachine{
     
     //Film Subclass Specific Variables
-    String mainPerformers, studio, yearRelease;
+    String mainPerformers, studio, yearReleased;
     
     //Film Constructor
     public Film ( HashMap c ){
@@ -14,41 +14,43 @@ public class Film extends CitationMachine{
         
         //Citation Formatting
         title = (String)c.get("title");
-        if ( title == null || title.equals("Title") )
+        if ( title.equals("") || title.equals("Title") )
             title = "";
         else
             title += ". ";
         
         authorLast = (String)c.get("authorLast");
-        if ( authorLast == null || authorLast.equals("LastName") )
+        if ( authorLast.equals("") || authorLast.equals("LastName") )
             authorLast = "";
         else
             authorLast += ". ";
         
-        authorFirst = (String)c.get("authorFirst"); 
-        if ( authorFirst == null || authorFirst.equals("FirstName") )
+        authorFirst = (String)c.get("authorFirst");
+        if ( ( authorFirst.equals("") || authorFirst.equals("FirstName") ) && !authorLast.equals("") )
+            authorFirst = "Dir. ";
+        else if ( authorFirst.equals("") || authorFirst.equals("FirstName") )
             authorFirst = "";
         else if ( authorLast.equals("") )
-            authorFirst += ". ";
+            authorFirst = "Dir. " + authorFirst + ". ";
         else
-            authorFirst += " ";
+            authorFirst = "Dir. " + authorFirst + " ";
             
         mainPerformers = (String)c.get("mainPerformers");
-        if ( mainPerformers == null || mainPerformers.equals("MainPerformers") )
+        if ( mainPerformers.equals("") || mainPerformers.equals("MainPerformers") )
             mainPerformers = "";
         else 
-            mainPerformers += ". ";
+            mainPerformers = "Perf. " + mainPerformers +  ". ";
         
-        yearRelease = (String)c.get("yearRelease");
-        if ( yearRelease == null || yearRelease.equals("YearReleased") )
-            yearRelease = "";
+        yearReleased = (String)c.get("yearReleased");
+        if ( yearReleased.equals("") || yearReleased.equals("YearReleased") )
+            yearReleased = "";
         else 
-            yearRelease += ". ";
+            yearReleased += ". ";
         
         studio = (String)c.get("studio");
-        if ( studio == null || studio.equals("Studio") )
+        if ( studio.equals("") || studio.equals("Studio") )
             studio = "";
-        else if ( yearRelease.equals("") )
+        else if ( yearReleased.equals("") )
             studio += ". ";
         else 
             studio += ", ";
@@ -57,15 +59,8 @@ public class Film extends CitationMachine{
     
     //cite Method
     public String cite(){ 
-        citation = title + "Dir. " + authorFirst + authorLast + "Perf. " + mainPerformers 
-                + studio + yearRelease;
+        citation = title + authorFirst + authorLast + mainPerformers + studio + yearReleased;
                 return citation;
     }//End of cite Method
-    
 
-    //Need to Code All Stuff Below
-    public String getSimilarFilm(){
-        return null;
-    }
-    
 }//End of Film Class
